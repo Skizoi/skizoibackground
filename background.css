@@ -378,50 +378,6 @@ body::after {
 }
 
 
-/* ~~~~		3.		TITLEBAR						~~~~ */
-
-.titleBar-1it3bQ {
-	z-index: 5001;
-}
-.titleBar-1it3bQ::after {
-	content: "";
-	pointer-events: none;
-	position: absolute;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background-color: rgba(var(--transparencycolor), calc(0.1 + var(--guildchanneltransparency) * 2));
-}
-.titleBar-1it3bQ:not(.typeMacOS-3V4xXE)::after {
-	height: 22px;
-}
-.titleBar-1it3bQ.typeMacOS-3V4xXE::after {
-	height: 28px;
-	width: calc(100% - 4px);
-	margin: 2px;
-	border-radius: 5px;
-}
-.titleBar-1it3bQ.typeMacOS-3V4xXE,
-.titleBar-1it3bQ.typeMacOS-3V4xXE .macButtons-eIdy0e {
-	width: 72px;
-}
-.titleBar-1it3bQ.typeMacOS-3V4xXE.typeMacOSWithFrame-1XEpN7 .macButtons-eIdy0e {
-	margin-top: 0;
-	margin-right: 0;
-}
-.platform-osx .wrapper-1_HaEi {
-	margin-top: 0;
-	padding-top: 32px;
-}
-.platform-osx .standardSidebarView-E9Pc3j::before {
-	left: 72px;
-}
-.winButtonMinMax-3RsPUg:hover {
-	background-color: rgba(var(--transparencycolor), .2);
-}
-
-
 /* ~~~~		4.		GUILDLIST						~~~~ */
 
 #app-mount .childWrapper-1j_1ub {							/* homebutton/acronym	innerwrap							*/
